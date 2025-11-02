@@ -19,16 +19,15 @@ teachers[4]="Patrick";
  console.log("sostituisco il 5 insegnante:", teachers);//stampo nuovamente tutto l'arre ma con il valore modificato
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 let lastTeacher = null;
-lastTeacher =teachers[6];
+lastTeacher =teachers.pop();
 console.log("stampo l'ultimo elemento dell'arrey nella nuova variabile:", lastTeacher); //salvo e stampo la variabile da eliminare
-teachers.pop(6);
 console.log("lista aggiornata senza l'ultimo elemento:", teachers); //stampo nuovamenrte la variabile teachers ma senza l'ultimo elemento
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
  let firstTeacher = null;
- firstTeacher =teachers[0];
+ firstTeacher = teachers.shift();
  console.log("stampo il primo elemento dell'arrey nella nuova variabile:", firstTeacher); //salvo e stampo la variabile da eliminare
- teachers.pop(0);
+
  console.log("lista aggiornata senza il primo elemento:", teachers); //stampo nuovamenrte la variabile teachers ma senza il primo elemento
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
 teachers.push("Vanessa"); //aggiungo Vanessa come isegnante
@@ -38,8 +37,9 @@ teachers.unshift("sarah"); //aggiungo Sarah come isegnante all'inizio dell'array
 console.log("lista aggiornata con la nuova insegnante:", teachers);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
-const lewisIndex = null;
-
+let lewisIndex = null;
+lewisIndex= teachers.indexOf("Lewis");
+console.log("L'indice di Lewis è:", lewisIndex);
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 const isTeachersEmpty = null;
