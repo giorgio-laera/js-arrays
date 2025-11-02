@@ -42,4 +42,7 @@ lewisIndex= teachers.indexOf("Lewis");
 console.log("L'indice di Lewis è:", lewisIndex);
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
-const isTeachersEmpty = null;
+let isTeachersEmpty = null;
+
+  isTeachersEmpty=teachers.length;
+  console.log("nell'arrey ci sono", isTeachersEmpty ,"elementi")
